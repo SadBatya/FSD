@@ -1,35 +1,34 @@
 import { createBrowserRouter } from "react-router";
-import { CategoryPage } from "@pages";
+import { CategoryPage, MainPage } from "@pages";
 import { Layout } from "@app/layout";
-
+import { ROUTES } from "@shared/routes";
 export const router = createBrowserRouter([
   {
-    path: "/",
-    Component: Layout,
+    path: ROUTES.main,
+    element: <Layout />,
     children: [
       {
         index: true,
-        element: <a>Main</a>,
+        element: <MainPage />,
       },
       {
-        path: "community",
+        path: ROUTES.community,
         element: <a>Comm</a>,
       },
       {
-        path: ":category",
+        path: ROUTES.category(":category"),
         element: <CategoryPage />,
       },
       {
-        path: "article",
+        path: ROUTES.article(":alias"),
         children: [
           {
-            path: ":alias",
             element: <a>Article</a>,
           },
         ],
       },
       {
-        path: "profile",
+        path: ROUTES.profile.index,
         children: [
           {
             index: true,

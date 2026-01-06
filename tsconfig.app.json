@@ -31,7 +31,8 @@
       "@app/*": ["./src/app/*"],
       "@pages": ["./src/pages/index.ts"],
       "@pages/*": ["./src/pages/*"],
-      "@assets/*": ["./src/assets/*"]
+      "@assets/*": ["./src/assets/*"],
+      "@shared/*": ["./src/shared/*"]
     }
   },
   "include": ["src"]
