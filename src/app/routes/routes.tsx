@@ -1,10 +1,11 @@
 import { createBrowserRouter } from "react-router";
 import { CategoryPage } from "@pages";
+import { Layout } from "@app/layout";
 
 export const router = createBrowserRouter([
   {
     path: "/",
-    // Component: <Layout />
+    Component: Layout,
     children: [
       {
         index: true,
