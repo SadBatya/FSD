@@ -8,8 +8,7 @@
 body {
   font-family: var(--fontFamilyButton);
   margin: 0;
-  display: flex;
-  place-items: center;
+  overflow-x: hidden;
   min-width: 320px;
   min-height: 100vh;
 }
