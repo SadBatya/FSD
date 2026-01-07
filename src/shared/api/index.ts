@@ -1,1 +1,1 @@
-export { https } from "./client";
+export { http } from "./client";

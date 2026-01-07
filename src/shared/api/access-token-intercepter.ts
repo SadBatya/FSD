@@ -1,6 +1,6 @@
-import { https } from "./client";
+import { http } from "./client";
 
-https.interceptors.request.use(
+http.interceptors.request.use(
   (req) => {
     const accessToken = localStorage.getItem("accessToken");
     if (accessToken) {
