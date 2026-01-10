@@ -1,5 +1,6 @@
 # Slices
  - User
+ - Article
  - Category
  - Rating
  - Company
